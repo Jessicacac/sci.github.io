@@ -1,0 +1,1572 @@
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh-tw" class="no-js" xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_PageHead"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><title>
+	科學月刊Science Monthly
+</title>
+<!-- Viewport -->
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<meta name="description" content="1970年創刊的《科學月刊》，是台灣歷史最悠久的科普雜誌，專業但不艱深。我們堅持原創科普文章，以本土的力量，接軌國際科學專業。" />
+<meta name="keywords" content="科月,科技報導,科學,科技,科普,科學報導" />
+<meta name="author" content="藝誠科技"/>
+<meta name="copyright" content="Copyrights © 藝誠科技 All Rights Reserved" />
+<meta name="application-name" content="" />
+<meta property="og:title" content="科學月刊Science Monthly" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://www.scimonth.com.tw/logo.jpg" />
+<meta property="og:url" content="https://www.scimonth.com.tw/index.aspx" />
+<meta property="og:description" content="1970年創刊的《科學月刊》，是台灣歷史最悠久的科普雜誌，專業但不艱深。我們堅持原創科普文章，以本土的力量，接軌國際科學專業。" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="科學月刊Science Monthly" />
+<meta name="twitter:description" content="1970年創刊的《科學月刊》，是台灣歷史最悠久的科普雜誌，專業但不艱深。我們堅持原創科普文章，以本土的力量，接軌國際科學專業。" />
+<meta name="twitter:image" content="https://www.scimonth.com.tw/logo.jpg" />
+<!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1413659201"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date()); 
+ 
+  gtag('config', 'UA-141365920-1'); </script>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>   (adsbygoogle = window.adsbygoogle || []).push({     google_ad_client: "ca-pub-2342597746025065",     enable_page_level_ads: true   }); </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141365920-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141365920-2');
+</script>
+
+
+ 
+<!-- 網站圖示 favicon.ico -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+<!--uc:eZHeadPageRes-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="/js/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/js/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <link href="/css/bootstrap-col10.min.css" rel="stylesheet">
+    
+    <link href="/css/base.min.css" rel="stylesheet">
+    <link href="/css/base_rwd.min.css" rel="stylesheet">
+    
+    <link href="/css/style.css" rel="stylesheet">
+
+    
+    
+        
+        <link href="/css/style_rwd.css" rel="stylesheet">
+    
+    
+    <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //check ie
+            // if ($.browser.msie && $.browser.version <= "8.0") {
+            //     $('body').addClass('is_oldie');
+            //     // please upgrade your browser
+            // }
+            if (Modernizr.touch) {
+                $("body").addClass("is_touch");
+            }
+
+            //for editor
+            $(".editor table.scroll").wrap("<div class='table-responsive'></div>");
+
+            $(".editor iframe[src*='youtube']").each(function (e) {
+                if (!$(this).hasClass("embed-responsive-item")) {
+                    var w = ($(this).attr("width")) ? $(this).attr("width") : "",
+                        u = (w && w.search(/px|%/) == -1) ? "px" : "";
+                    $(this)
+                        .removeAttr("height")
+                        .removeAttr("width")
+                        .addClass("embed-responsive-item")
+                        .attr("allowfullscreen", "1")
+                        .wrap("<div class='youtube_wrap' style='max-width:" + w + u + ";margin:auto;'><div class='embed-responsive embed-responsive-16by9' style='width:100%;'></div></div>");
+                }
+            });
+
+            $(window).scroll(function (e) {
+                var win_h = $(window).scrollTop();
+                var win_w = $(window).width();
+                // 視窗捲動超過.header時，#floating 增加.fixed
+                var page_w = $(".main_content > .container").width();
+                var floating_offset_top = $(".header").height() + $(".main_top").height();
+                if (win_h > floating_offset_top) {
+                    $("#floating").addClass("fixed");
+                } else {
+                    $("#floating").removeClass("fixed");
+                }
+                (win_h > 10) ? $("body").addClass("is_scroll") : $("body").removeClass("is_scroll");
+
+            });
+
+            $('.btn-floating').click(function (e) {
+                e.preventDefault();
+                $('#floating').toggleClass("open");
+            });
+
+            //側選單的開合按鈕
+            $('.side-toggle').click(function (e) {
+                e.preventDefault();
+                $('.side1').toggleClass("menu-open");
+            });
+
+            //gotop Animate
+            $(".gotop a[href=#]").click(function (e) {
+                $("html,body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+
+        });
+    </script>
+ 
+
+<!--uc:eZHeadFinal-->
+    <script src="/js/selectivizr-1.0.2/selectivizr-min.js"></script>
+    <script src="/js/html5shiv-3.7.2.min.js"></script>
+    <script src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+     <link href="/js/slick-1.6.0/slick/slick.css" rel="stylesheet" />
+    <script src="/js/slick-1.6.0/slick/slick.min.js"></script>
+    <link href="/js/slick-1.6.0/slick/slick-theme.css" rel="stylesheet" />
+</head>
+<body id="ctl00_PageBody" class="home">
+    <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBdhXSDRzSUFBQUFBQUFFQU9WODYxTmpWNUxuUUJYVjNXNVhsKzBaZTcwN01iYTZOb2l5ZHd6b0RiSmQ3cTN4ZEk4OTIxUGRhN3U3WjJKam8xWklvcEFORW9GRWxXc2VIUkpQUFhpSTRvMEU0bzE0Q01RYkJJaUkvYkQvd2Y0RGE1MXo3LzFVSC9mamJ1WTVWK0lLdUtvWDYrM2V0UWxLM0pzMzgrVEprNW0vekhOMC8xZkpqYklmVitqMFpuMjF2cnFtdXZxRy9hM1NPdmgxdGJRRVA1WmV3YzkxTjk0cWZlZnFWNDV2dldXLytMalI0YlZxWE5aR3grMWJENXlPaDAzdVp1OHRqYzN0OGpwYzN0dTNIanJ0M3ZyYmRzY0RwODFSd2Y3NFFPTjBPYjFPYTBPRngyWnRjTnpXM2RKVWZXSUg5bStWdnZzblpmL3pkUVhEbTNhSHg5YnNiUEk2M2E2YmVaNDNkWlpxTFRuWUpzRWRFZ2dKNCszZitVTENZajlKN3ROWUFLNTg1d3MvT2VxbW8rdWtMeVg0WjJseWovUnQwcGlQdGs1bER6cUFIb2pwMkpvVWpZbkwzVUJKVWdFNm44d2VkMmIzZThUZ0J0M2IrTTdYU2dQOXhOZFBwanBvdDUvMHhrRVdmNG9PZHdrclUvQlU5bkNleGxaSkxBNE1TU2dxZGZXaDBONTU4YkNieE1MU2VKUVBpVE1IaGpkQnkxZVV1bjNqZVBUUTNXejNLQlJERWJIQUIvaFB5RWVtTmtpcTl3UE9ScjcyQVIrRWZKRlRuR05zYmZIV3U1c1ZiTVdSQ1hGNWluTzRlWWJZNW01NjFPeThYKzlWMEgrYXUrYlIvTmNsamZKcHpaMkdCczBYL05ZWERvK2orWUhEZmw1K1UxT0QwMlpGbzFYZ0ZRVm5CVzFUczd2SjBleDlkUHVtKy82SFhxZTN3VkU0RVhsemZtbHpPbHcyaCtidjRHWjl3eU5WRm8rYWxCeXN6VjZuRFhsZVRPMXN0TjVYa3RkN3ZVMmVENnVxSGo1OFdPbXhPUnRSVnFYTjNWanBmVmpWNEw3dnJ2eTY2YjRhcjVibWhtZms1SFRaSGQ5V1dqMU4zNnJ4K245NXdYc2ZPcjFlUi9PSE5tdXpYYUdjcDZXeDBkcjhTSlg4eGRaR0lZLy9INmIxeFpmMFR5c3FOSC9UNEs2MU5tZzhUcTlENDdYZTE3eDNIMzVYZnUxNVh3UDMzTzc3RFE3TkhaZTE0UkY0bFVkVFVmR0o1bU0rb3hxcjU1SExwdkUwMndvbDNtZlBBSTlHcXd2RzFZeVNxNUJuMWRlZW56bnR0Mzl6cDBKbjFCbk1Kb3RlcTd2NXljZFZuRjJlN3ljYWplWWgrSXY3WWFYZDZyWCswdnJJMGF5NWZmN1NQLyt6NWovOTU0K0F1SzdGWlVQN2FsREllKy8vVTU2a3NxbkZVLytldGZsK1N5UE1pK2Y5ai80RnFCblJyYTg5dHo3UXVCd1BOWDl0OVRyZWUvLzlqelRYWDhFZitUWk1aWjN6UHBEY1VvNjJRbmNMQ1BNRHZ2NEtQb0QvRlptUkpwZ0NxMTB2endyY3Q4c0JrazBMdndzVFUyVzFlMm9mY1NLWWU1VnBlVTlCZFRvbHlvdHNVdDduaXY4VEd4dS9jYzlxdjJkckFKZnhmcWk1YWJOV05MWFVWdWdOUnIzSlVsMXROR3YxSnEzWmRQTUQ5b0REWmEyRkIzQm85eG9jRHh3TjhLem5RNDIzdWNVQmQvK2xjQVplYUFYQlk1ZTNoQ3IwaXNuS2MvNEVUZlBzcXdpcG4yTVpuUzZVYyt1SUw0cWlxMGgvQzhueVkzN0ZEdEFLVUZXWnJjSHE4WlJkclhjM09nQnVJZWg2dGJRTWZsK0R6MGp3NDd2V0I4NzdJT2MzelExbDE2c2FIWTIxanVZS2NHalF5VjVhZW9QRHFCSXQvRkhHNk8vOTlIT3ZvL0ZUZDR2TFcvckR0MTZyWXpBT2VWMEZ1bGRKeWk5TnpOQ2hqbXc2L0c1cDJVK3E1TVJaWlhNL2NEVGI3VExzeTlHL2N0ZngwS1A1aGR2VzRnSHE2M2xxVU43RHhDdUpyMEhRRWhQTFFQaEdudEFKMGFrWmNhTGR6ckJrSVRWZGJRZnFHNHBCTkxRMG9sNVhDMGV0UkVqd3dHdjVCeURRZVIyMmVxWjhBWE54YVVoY0dTNmdkVGNCRUhVajkyc0Z0RzhLbXhuSnY4OGp0QmpvSWgyNzJjUGhnc2x4ZSt2WjVQeWdjRmgwKzVDRWg4UkVpUHJYZ2Y3MVBMMFYxdFFEcC9lUjRwSDhid1RUNzE0cExYdnJsYnFDVzhpenRPeURuRWM0UFo2V0Z1WUNBTTB0T25PVjNXM3pWTjNUYS9XR0N2TTlzMUYvcitMZU85ZStnZ1hxOEpaZHUxZmJZSFY5dzZBNjhIbm4rcDBHbUhZWHJCb0cya3QwNy96d2Mwd1h1SWIrN2Urcldwb2EzQkNBYXEwdWw2TzVDbGxxVFhxanpteW9NVmJyTUUrd2RZRGp2UFkwY20yZS9Md3U1VS9SeFh6UGFLbTU5KzdWczhOL3R3eEdyQ3JhckszV21ZeGF2ZVhaUnBvbno0MjA5SXhCbmk1VHE3WG96YnBxZzFscmVCYVplWEpEWHVhVkMyYm5wN25aOFRUYXJCNUhwY3ZiVXVtd3QyQzYvdkx2UHIzejVjK3JubTltVUd5TlRtYzBQZHZNNU1qTmVtTnVsRmZQakxJVVJxa3RCaXZneDlOUzIrajBLcER1YzB5bzNtQXdQc2VFSW5sdXFOZVJ1cVRzVlkvVDd0QnA2cDEydThObDU4R3dwT3gxR1JNQk5vS2lzeEdxVzFtdDEyVGYrN08zM3FzcjBCSTkzVmJ2Zk9Ed1ZKbU5KaU12ZjdrU1B4ZG0wbUlpVFRLQTNIb1FCNDUwQU40VHhoNC9PWXFMaTdOME12S2RyMXNhMnFQREtkSTU5WjJ2UnhqcEVzSSs4cmhiN05vR1loS2RJc2tJYXBaVExCY2t1Q01adEtBWjZLYXRiSEx4NWZubWxjdVJlVmM2RHBIUm9CUklQem5xQTJ4SjFuYkY2YWd3R0JlbUJvV2xYV2xzaHJiSGFYd0FIb2FvSnd5dmlPRVJmb3NHZlNTNHpqK1RnV2xoZTd5eXNuS29STnlieU80UEMwUGRNcHVkZHVGZzhNbFI0SGZ1NWdhNzVqT0h0Y0Zici9sVjgzMnJ5L21QRE8xOG9QbmRaNzk2Y2hRa2E3Tmt2NDJNYjB0ZFBVTHdnSzZGU09zV1NLYStSYkUxTGJUMkFwTlBmL1hiei8rNlFtY0JjcUUxVGVZVzZZNWZuTzRXaGpPbzBONm1zRHNnK1h1emFVRGJRUUR4aUw4N0VqQXMrNWtGVzJoS2s5S1VmeVh1eGJQSFU3UnRDN0EzVEdoMjMwY1RzMCtPL1BSb0JXWVRab0MyZFpDRjF1enhFQjA4RU5kQ0hNd2o4aCtNUTZ5SDJTOXVSNlBCVkdESFN4QllJUjIyMGI1eEV1a0JJNHBIZzlsRFA4d05GZ2duYlVLa1U5ZzZCRXZSb1RIYUc0QmlJVkVpalc2U3FSM09HZmlJQzMxa2JaeXNMOURoWTFoT01HdXd0T0JQa3VySnB0TmNsc3hwY0FhRWt1TU5LWDZDWmNweHArUWJ5NmFqL0VwMmYwR2FtSVNhUmtoM2c5Vlk5UVBxOUpCSXR6UTlLV1RtVUVIR2tOTUxpVEJKTDJRUDRseHJHSm8wTmdmRzQ3S1kyVXFMbU0yc05Oc3Z1RGJaL1RCT0RJaUtaVGdiRFMrVnZ2UDVpYitMN2dZZ0M4TkNsc1pTNHFvUGtqK3ExckdSUGRxbVF3SGFGU3h1T3BOSmIxYWE3cEtFM2dYelpVOUNwQjFjdHkrN242VEpXVzQreVRjdUprZkJjR0xySmx4SDNzRUQwVCthTnlXNmR5d3VqY1R3RmhNSnM1WW9LZUpFSUJxWDAvRU1sTEFRSDhEY1pIK2Zkb1J6QSs0aFEzM1NOS3RjMXc3bzZBQUpMWUdRdkJaMEFNWThpeVZzcWgrMWpTWDRGTkN4VmhwclE0QTAwSVhGYTNzZkRCeWxkSVJGaUVJVGs1eS9FSi9INjRFNU9yekg3SHVsaUgycmxmYjlwYmlUQXRmT0JRQ043QmFaYmxTSU9ZUUcxQkVUbzNBRHRCQVRBV0ZvSmJ0L0NLc1JsaHlkSEFIa1J0TVJHWHdXczNLTjFxS3RVVnI1ODhzUkRmcit1WkRwSU8zdEpKMEVRMk9CSHdnSmV3bnhDQ3pST2x1Q1NVekRvNWFTSDRtTlN1TWhpTlljMzBwdENTNUJYQjRDWDBSRDdYZlRXRlJzT3hhR3hnak03ck5HVUZpMllsZGE4TStTU0R2RWExekNFRDZYUm1DbGlvcys2WEFTZXc1OWtXd21LdXdzME5neU05aFZkWU5wQzFMaVYyTFhNb2xHb1k0Z0hTdDArQUI4UVFvdms3a2xjU0JNWWlsWUZkbE1KMFE1TXQwdmRrNlJ6SnF3K1JqOUFrYjhPQW5FNHZRRUhRakJXT2pPSHQwT2s1NE51bFFrc21yMXVtcWQzcWhYR3U3dUpRNEJsTDhySmphRS9rbXl0WTVSbHMyY1BEYm1yUHl6OERoRlp0b3dWVUp3QnJmS3A4clFFc1FGN3Jnd3I5eE5tVnh3UkdGd2crNXVrdTVoSWI1Rk53OW9haGE4SFVZaXJZQ3ZkRUtXSnNOcjBzb2dEVVR3ejg0ZUVwb2lIZk9RRTRBRFBFVkMvVEJhWVdrSm96ajdURU1qTkxXWXY0VnJZSGdNMVI4OUZMcmE0S0tRRE5LOVErUVQ2dWNoSHovdnpaTm9HcDdLcHVkRThIVVFkenpEckY1V3hPb0YyZk16RW1ramdaUnlSaUV1VUYrdmxENWlXUzB1elc1S3MzR01aZ29heUJQRVAwL1Nlemo5TERjVXQ3VGViQ3dJeEpjbTltTnhLSms5Q2hIZkNyY3g2UjZST2xjd2svS0FQQnNuQTM2eUZnUllnZUdzTUxHT2w4Q0Nnd0NCK0dmYkI3TEUvcUF3ZGtSSGU0WFZWVWh3UW1LTlJBSXdyYUlmY25WQUNDNzlqLzIwdUhVc1BJNElmZUJ0QVp1am9hR2x3ZTIwbzNjZXpyUFZpUWhHQU8zNHNBKzJJUVZMWFgyU0wwS1A5c25NSkpnTmFNU3VMWXdlY0JzRDhYcGZuZzR3a2VRZlpEYThWc1NHQmFuMHI2QmNoYkZsTXlmd0EzcUx5eWMwUGc5K0lteE40cFhNR2g4TVg5dTQxTm1hcHh0anNNNkliMXBNcG9wYXIwWnIwSnNLRU5ETEMvenNieDB1MXlQTlB6anFNYklPQUFJNkZIYW54T0Ftd0YxeXNFVW5OckxwU1hBZWlKNTV4SXJoYmNCUFkwR1ozZUFKek5OTUNaZk9xZEJvMFczd1VOcWJnRUdTamxYSTIwQW9KREdIUTVnVkYvelpERVNKY1FSTkNvRnl1dU1ZdWkwaERmdkF2TG5HOUc5Y1RpOVlXT3FheU9Nak9Xd2tVNUI3SVlDTHF3Y1FvT1NSQmpvQnl5UC9zU01BeU15V1AxQzFwYUVRRmxVTFN5ZVNyMCtLYmtyUkJBWUFYNSs0TUl6QmJ6cUJBWDkraUt4M2F2aXFKTWxCa3VtWG9udXdZbFFOYUlCNjBBeExyUURDdnFpVXU1QWNoZDRnYVc5RjRITjRLUHFoV2psQ0o1MWJ5OWNmT0JHUk51V0VRamhGdjhoTVp0UGhQRk1lVVJrdFpDKzZ2d3IxQngyTmMwR2tieDNNUkRxQ0NBRjZmRENsVUQ2SU15dTQ4TFlPaFowTnNCcGs3UHlmNE16S3UrQ0xaRzVaR2p2T0hzZmdRYUFFdTNOdVQ0Nml5Z2RKc0F0aUFGeEJZNlhhcGVpaE1PdW5Xek1RdEdudlBCM2NKZEZKWnNFZkZyRmdBZkQ1OTBKMEZyU1JGd2lrOUc0R0grZVB5Y0VLRFlZMVpHNGNSaUltWTVKL0RPZ0FJWWpUQTN6TkNQNWpBQ3JGVGFtck1WUXJUZm5TNHQ2bVVZQ0ZZYnFLS0pGa0lyUnpWL0JCK2RrYUsrRUxJcnNmNG9VT0x2dmdFdVExWWJ5VGRPeWhJL1lrQUxkdy9xU3ZCeVlRWVF5dkpHSUpxQXlncmhXaWF6UXhCZzh5RUYxQVNUSTdjaTVMYmFERkQrZkZSQkxBRXF3UnlYOUtEK2FnYXp1U2J4TXFSK0xmQVMxZ2RQYlNIeFd4U0kzU0lqbytSZm5sRFlBQ01yYlFseEUzcGpYd0NmN2hhdzhoL3pONGs4RmdzaWhOOFB6ODcwbzlHY0FLMHRna0x5REFmZVQ2RHlwa2VKVDdqaUpaOFkwcHJDNWIwNXdqWndRY21SOWRLQVdIMGhzSEZDTzFIYk9MOHRvR3cwRUZ3bXFDVTA2UWZnSEVjdGZBM2tPaE8yRG9WWWdBcitIbENIYzZvT2ZPa3JjMUhjeVFyalFORE11MkhrZFd6STllVWJlYVdWdUlSNWtvV0gzZ3lzSlNtdlFjQ3UzVGRHc0lWZ3JKTEdQVGhFRzY3M3d5QVE1NVl3Z0l2dk9GYVhjL0JYZ3gxRW5uay93dTVObnM0V3hSdzFacmpZVjU3dTRsRGdIeEtKU05aS01EcWtYTWVhMVRrajhFMFZNTTRKUFlvV1lzc2dkaGFXNFVhL1dEdUJDZklTY2oyRGc1VEFzclllYktiVkNjZ0k4enEzUHA4cEFZeE1TUnNQMUdXV200anR1VlhUQWUwaWZmeW5WNHVxRkVvY201N09FSmFSMlhJREhId2dnOU0xdDBleFBoNlhaRW5EOFJSeEhYZ25CZ1JSUFQ1QWczTnJQN1FYSE5COFV1VkZrWDZvNnlvbEVDSDVJUlp2VWZxMXRkVjVEL3ZoWUdFNXBmdXg4Nm1uL3RkcnE4d2t3dlFGcGhPQVMyMDVEZ0RzUnpXRmVRNWNsQkI5bllvS2x0S0t5ZUhQVkFxQWZVQmpBWUJpV2orNFUxTVhrcytYelpvMzd1UXhwcGJBdWgzZVB3VTRwS3ZkNmdNMnByQ2xzSG4xM0t3R0F5UG9NY1N0WjJ5Y0tjNXN0NmEvTTNUb2ZtbDA0WE52T0dZelE1amQyLytTNXdVWEYzbHJWZnd1Qk9hS3kyUG9RMVEvdWdtemd5QVl3V1NzQUlvcThENmxrazl4OHphM1R6a1lGTEFvQ3BhN2Jhdk5ZR3hDNitNVENIdURSSlJxQ3FqSE1pWUFqSlQyamZoV29TbzlEK3ZyaUFuUkZ5a01rZUQ1SFlNTkNnYUJhYUlhQkwwV1V4dElHTFpHZVBiR0szaENZT2FBd1JoRGlVa0tZbjZSelVzVXU0ZURJZDBzSXFFRFBydjZwdWZiMUJhZjMvSUxBZGRDbm1nM3d0VEV6VDNpQTJCZ09kNEJVSTdWZzdDaHRhWEltSmFTRTJ4YmZ3MGVMdGZVSm1DUjBwRklmaXVxaDVlZU5mWWQ3TGxIeVhITzJJb1MweUdzelhuWHhOQ2ozN3ZEZ0JsSVEvUTNzNGMwcUMrVWtvNmJFTEcwUjI0bklQek4vWFhCcVduYnRKYk5iQktKS2pyTVhYZ1lNZHhCQXZoSDFRdlVKTUIydENuY3hLREZid2RzeEFQaVp6R3pqZWtTNGNjalNLSGRqZUxvaG1tSVA4Z3pwdFpmV1RvdzZXVks4WE1WVkJ1K0MvWUN0eTczSDJ1RmVNWUhZUlcrZkZ0bUZoSlk3ajdGd2xjekhhZG9EaUZucHd3dGdnSVFaTGtWRmNIa3dqK0FDVENuZ2lYOU5oWUZsOExKdzhCbFJkM0g1OEgwWVJxaTl4T0hLb2xxTHJZdDk2UGtHZjR0dDRHaUlud2lDNTVNQStIN1lMRkhXS1REdzFTdUp4WUJjcGtXMElFb2NIRUhBUDdaSDBBb3JlaWRCRmpMc1F2SkVHRStVc0hSM2dyVmFvK2lGM2s3NFJxSldWWTRhU1IxajM4WE1uNUhDV2JnR21IUlRuSU1YSHNNZTFGQ2VCWFU0anJ3NjRPRFlCa3dCWFNDYk1MUDJUSXBZdWJMQWpnajcwWVdVZWErTXJDYVlRMER4V2ZoMEwzQVZ3OGJOT0tycERFSk0vcDhUMEU1MHFia3RUamFHd3ZIeDVnWGZGcFFNcDJnRW14RlE3ZUVJM0Q4ODIySHZHeWV3S204SkR6QSs4aklHSEZXUWNoSUg5QUFvejVyUjFGZ0l1dUNqMllHTkJzamFEcGN2eUROU2ZiSnRtbVFiNjVkZ1FueGNYMHJ4UGp0czM0KzJ3THNuZUdzdWVoOWdjQkNESGxpeVdyNzJMR0FpU0MxTG5ZeUc2RCtBTTFJU3lCOWNIaXdpa2RZdWtlakVvYkMyekUwWVlab1FqVkpuWjhrWVJXeFoyWlJIRzl5MkRVMkJhOUs5anpUNHhEUmVsMldQdUNFZ0F4UVBidnRBSVU5dGtkaksvcHlBUEdHYWVPV3hScTFZYlRMb0NENzA4MGVpZmRLSTNlekl0cm81ZDNQYkpSVm5aR0FwSHBlTUphYXdkNmd5ZzRRVEF6czNwem8wUXo0M3hQaERPOTI1U1RPNUJGc1hPWG5JV2w4QVMyZ0VIUDVQT25rendXMko2QmVOQkxxVHhub1BrRHdOQ2tNWjdvWkJoRm51dGlNVUtpcGVmU3hPUFNhb2ZHMFM1TVlxN3VQT0VXNGJEQitnWWtKaFhSckVCT1JpbkkwdVkwVThlSXpEdkc2YTdBY2hmVUdNVk5WV05WcXN0Nk1OZWpzelB4Y0Zwc3RaRkJqWVIzT1FjNnRUdldNTzl5VzIzV1QxZVJKRURYZUxXY1o0T1VDUllHNjR6cENOa2VnR2VDckVNZGx5d3haRElOZC9wUmhxdWtWUVg3NkpaTkRRV3dEaVBEVHhBUFJ0aW9oVmNEWGRPd0prSDVjek5yUU4zR1V5S3lxbVNiZHRJYlFsQTNpQ0E5Qjdpc1VLK3ljblU0aHJuMWMxMzh2bHNNYVR6ZW9GWjN6dzFxOGZtOUhpdHpVNVhuVnRwM1g4SEE0TUtRL0N2Z04rRGwyUGx4Y0tiTkx5QjZHNDZnVVVlMno1UU55R2dHYU1KRU0zcFdZZzNyendINDNlVXh5V1Z6L0RiWFNYblQxVENpaFozVXBDeTZOUTBpYkdaU0hVVjdCanQ3d283QzNJWGRXOGNZeGFiZm5TcDRBRDZkaXdGcVZFYWkwQ21RckN5TmdDelNFZm5GYnVrMkJYQTdDMXZkSUhUdktIcU5Qb2FTd0dPeEw1UGNFbmVoQTN0ME5DSU1OSWh4amZKMmhiMmx2MVRrRTBBYVF2eExUS1c0S1VoU0pPR3cyUVJBYkNZMlJTMkZtRTFnT2Vyenp2TVBCU011b0xjZFptU3RUU2FrUUpwc1R1R0RqUWFCSXpKd3hzUVFRbUFTVXl4U2NFMmlqbDBCRGlQKzBxeGhKallnS0lSTi9wOFV6UVE0V01ER29BZjdIanJPaHFHYnorZERySTdlM3dDRW5MRTJKV21rUjVJTmRncEhmQkRDcExHZWdCb2dVQitjQURxWXhyejhVQ0g5dHRheE00OWZ4emJGZHRDNGhBUlRxcFBTa09GNm1lZThxZnF0clJvQ3p1aVVQK3lmck93TmtMNkFRMkY2T0FCZk5CQU1ZU2RkWDhhMHlOSEJJenVXZXdHLzFVWGRrUmZUQXAyUktsL0tYdklnaHhBbEZTZjBMbEIyNk1rZmdBVXVGT1hXT01Qc0JZbzdtRGhKdXhRREdlVzRVUDBqSlBIZkY0U0pZZ1hJcXRZNnVPWjVoNDBCNERTNlVsNGlDWWoyQlNmVzVURzlyRW5BUzduVHduaEkxdzJKLzNpd3JLMHNFMjZoOEhRUWw4RzE5WGFyaEJhQlE3U2VFTHNId0diMHZta01KZUI5WUJtWXZVNlZ1cVJkcHFZaGNxSGJyUUNqSUpuMFV1ajI3aGxrWVN5TDhYWkNyc25RaWFFZHR6WWtFOW9zR00zVjk2NjlyUmpON21qUTkvM3FadVNTenQxOHdkNlRPYVNEd005L2RSTnpwTGY2Nkdia3NzNWRQUEhjNHptK1k0SFBmM1FUYzVxMy91Wm01TExPM1B6eDNOSTVwSlBCNTJhRjhOdEhaN29ZSEczNVBRcmZkenViMVExTmJ2dExUWnZGZUF1czFFUHJOakJaRzc3R2lXRTA1amhYM0VzenN5bXlaTS9PUm9YNTVZUitQYk5Dc2RMNTB1SG5BREZhV0VGN3J3aW40RzlZQ0R2WG5Xd3NieDU1Vi9oc3l5R0JjeUc2dCtialRWTWNQQ0Z4N2Rjd28vNzhBQ2VXMnh5SVNlMnI4REM0K1Rnc2xMNlNFaE5rMkVzdzNtQWdKVWxMbTF5MzgwblluSzBod2xQWVZ4c2RmWkZTRThYci9HNXJVa295dkJzRHhTQllHUnBZa1k4NlNXUi9vTHpSc01wSG9EQXZOZGY0YWY1THpMZTlmeWM2YUFZVTlqTkFCeWdobUdkNVcwb3Z1aDBBS2JoUENUbkJEcWNKczNGSm9OeTNLelQ2c3hHblY1MzFtU0Y0ayt0OVNNdW5RWjJYMlFjLzYxRXZnbFZOT3ZuUUJUR2IyS3hqVEpBT2JpYjZKdkN6VCtBSGVEdURDenhmVE5PU1h0bnNIQm5YVG5lS1lNSFNXYUg3OTN5cWdKY214UHo5Z2oyL3RxT0FiRmhnR2Zib2JsdGk3alUybzVMWWlRb0RHNklpejZ5SG1kYjM1dmd5N3lEaEFFcWVBQTVnVDlDQThOMG9WVStpNkhFT3RmVXNVN3AveTJzd3kxNTFhRXlxRGZMM3N2NVVNOTVIMEpuNUI0SG52Z0hlVTc1R2g5OWYra2ZIZzdqdzhFK2JTeEJRc3NRRldqdkdBUWVuSi9KTU1ha3NBOGVwK3VQOFVqSm5TKytyUGpVL2RzS1BjS04xTFNRMkpBRGwwd1JoTklaYWdSYzJ3bS8yTjdCaTJNZVE3QUpkWENFa1NvRFU5UURjWStsL3pMK2JhSFpLeDliTmZYTmpycmJONnM4RGx3Q0ZWOVo3MWZsZExxcFlWOUt1bjJ6d1ZycmFORFVXdTMzSFRjL3lkMzl1TXI2eVlXUGx6c3M1UlpUZVcxMXVjTmNiakdYMTJyTEhhYnlHbk81VlhzeHgvektLTUx5TEtkeVIzVzVwYnE4eG9TM3JIWGxGdjNGdkpWVFZZUzlDVGxacTltSEdwUUFYR3NONVRXMmk3bVNqa1U4RUxIVi9UU1dOWFkyVUJoaUxYNEFsclg4QTh5UFRvMTNENnh0SHErUVBZZllhZ0hFcEFnZzN5dkVWbzBlcHVlTkh0Lzc2WGc1TW9pbGZ4VG9udS9UNFdDWXRoQTBlUjBPOVR4dStJOGR3WFZ4Y3dxUHdPYkdBNU1sOHEwcG40K2RFSjBpb1M1RUtja2xZV1ZlWE80QmlDSVg4NGU3aURxU1FhNEZmdVZ0UHdsc2FTeUlJRFRDR3VsczBuR2prRTBVaERONEJBTUxpR2FWUDlkRjhrL1I5VUd3SW1sakdEYTZEYUJJaW5jckEwNzQvMXpBcVFOblJhK3QwWUlmcThTWk9KcWpxTXZXQWhzRGMxa3Rpd0lRWVdxUkpUSUdiNjVWY1ZtRm9ZcXl0OXJMclJia0N1SEFhbUp5TE9XMU5pWlpCMEZUaFQwekd6ZFlFZmJBeklqemdLSExDSEhtWW1aOEZmSEFVbG9rc0pnVmdlVjdyd0pWZzR2NWVZUExIK2IzTitRSTVMdnlSMUdoWnROaEhvRzRJTm9ieEtQcElBand2WDhTZDZ6RzlxVFJEUmwzbkp0V2hNeTVhZVZ6Q2t0WjZzQmRMUWpBTUNyWmZmQ0E5Z3dOUk9UTmFMWTNyYXk2SlA4SjVFWjY0aE4zOXJoU09FV0s4Zk9BblQyWlVLb0FPa3ErUGpyYWk4TVlEdE5COXRUd0FhQjErZHc3aTB6Ly9hcXFWd0Vzc09oazc2MnRVZkVxSmxIVk9WODZ3RUY4Y0xBQUJ4OXE4Q2NYa0o1MWdHZVdUM0hjb2l1dlllQ3Qxb3hvQ0VYcEFHT3BNTTZadVdoa2d0RmJqU3hFMmZEenVVaXJNcXNLZnkwZS9TME1HOWFVVzIwc1d0ZGdnTFdvY00wdnhxZUJOd2pKRGlPR1p3aW5DRUJOdWRtQXJLQmlTbVhNNERIMkJ3VmZOVlhydmVocVdPL2xkQS9EcE5iYzBHbnk5RkJOUzlHRU1EK0pPd1JEQzRDWVZEb3ZPaWpqVFF5KzZSUTdmcVYvb1M0RFhBUGJManE1N2FJei9ONnNOL0syaTFyWGhnMEord0Fjc0o1cWVpTlBadFpWbjFGVFh6QUUwemsxcTJVMXUvcWdRQlMzdXNSRTZDazZHblZhZFIxTno2M2oyY0Z6QlV0VkZUU2ZVZkJPZ1h6ak9RWE5YRUdTbVpTaXUvazlQYUgzVUhqY3hsUDEwL1RGa3pCcStocGZTbDl6WHQ4cnF2cWF6dWo3VVlGOHd6bDlUWEpUanUyZnkrRi9iakY3SEtPQjFGTTBOV21MYUdwNEtVMU5lVTJ2cW1wcVBLTnBZZnRSZjA1VG8yeFovM2oyYUF3OGxFYVMwbXowekRmY0xsSlRYMlFCNjE5S1RXTmV6VEpWTlExRkY3RHVuSm9HcmlaTkFaRHB6eDVNMEwwTlBJYkdIZ0k4UmtjNm5xYXZRYSt1cis2bDlEWGs5YjJtcXEvK2pMNC9LNVN2bUhBdFZ6alhWbDdKaUpzVFFpQWo5UFJpQ3pBd0w3K1c1R0p0dFRxZEhqektZRFFVaE9DM0w1UUdpcjRsZjlsTDg1N0dyTlZWY0xHYTl5L1dVNS9YOHdlcWV1ck82R2twbEt3N3A2ZU82eWxrZXNXTlZUeTRINEVhRUFyaFRsVU44VjBjSnIyaE1BQy9mYUdjNTlWUWw5ZndoNm9hYXM5bytGV2haTzA1RGJXeWh1eUxDeVN5aU9mTFZzS0FEZmtoL2dxeXQwbld1c25nV29YUVBrM1NLeVE1cXRJb2wxOU5BVE5nTUJSUlh2dGl5bXZ6eXY5SVRYbXQ1WXp5aGdMSmxyTzZNM3AwMjhRWWphMStpODJNL21OVjNXcllOOElzV3FPNm94WkllRTRGMldDNGdxK29LbmdXSUJVaWg1cHpDc29BaWZvanRPc0lLN3ZWSTFYOXFuSGhRaGdxa2w5cVhrYS9VMlQwWTFYOXppSWpYWUg0Nm5QNnljakk5RGZpZERlZXpKbFcyM2JUYXMyZ25obkthNHU2ZXRVdm85NHBMbnBWVmIyenVFZ1YzOHJxeWJoSTJKNFdEZ2F4UmNYT3A2aXFpQys3MFdzQkNqMFR2bjErRlUraDBIVlZGYzlDb2I5Vmc1NnlpaklVSXFrd0RXWUUvd3ArYnlpZGZyNm9Zd1M5ZGZvYWZKdkJNMkRlNTlmN0ZCajlSRlh2czhEb0l6VUlLdXVkQTBhS2JRNTJIbWxGR3V0UlZSVGlxczVvTUp2TXp3UjJuMS9SVTJoMFExWFJzOURJcElaQVpVVmxhSVRuczNiMkpIOFl2MTRjV1ZSVlVROTJ0Qmhyak0rR2NwOWZ4Vk0wOUpxcWltZlJrRmtOZmNvcXltQUlVbjU1ZGorSnUzeEh1TCtucXFOT3I5TkJpYVlya2tuMEw2UGpLUko2WFZYSHMwaW9SZzF4eWpycWNxWDJETm5jbDJZU0pCVEZCbFpVcFRMVFFTVFNWK3ZnZjBNUkxYVXZvK1VwR25wRFZjdXphRWdWMStMclRsQk43WXZnV2gwTFA1QmRMTnJxWjhXMU9ndlgwMVJqK1QwWHE2Ym5LZkQ1VXhVOVRaYXp3TWVzaG11NW52d0J6Q3loZGVGNG1SNUhlUWRSVlQwRXRRanJpc0YyM1l1b3gwZHlpdXR5NTNVS1g5YUk2cjZ0ZlBkYW85MzFqZFB1WVcvUk8zMk5YRm5acXlRV0ZwY242UWphQzdUNWFmNEZhZzFPMXplODRESVpkR0F1ZytuYzIvcTRuSCt0bEdOMWVlcmN6VGJIT1VGL2NVZStJN2VJUTFHU0N1REIwYm1Na0prckpwbTlWZURNMi9mT2FIajJEWGhLd1pYNE1qdzgwNzhTTHZnR0hEY0Y2OERuZHNhd0QxOXNKRWFUVG4vMm5YeDhKSFg1VjdjMnV6MU5EcHUzc3FuK2tVYzVwSi9WMWRvYW5QYmJueis4ODRYKzUzV2YvdmFiaC8vdzl4VWVROTJYbGw4LzBON3pmRmJmNEdoeWZmczdnKzAzZGQvOHgxODZkYjh5V3o3NzVuZU50dXFIbjF2cXYzcFEvOEQweFIybFhtL2dsMkJqVWR5a0RJelFvMEZ4TlZwMEZrMm5TYkR3VlQxL2R2cmFXWmZINXF5MGVweldnaG44RWQyU1h5dGMzRXluQjdRSzN3cnpsOG9GNHExMzROcy9HeHd1dmhqNTY4ZXJjdThHVk1xOUlZM0VwSjRkL2k1T1lYZXptSFNUM3BqSHFZWHZNM2t6SjkzVjB1aG90dG9lVmRvYVdtb0w1TkNoZmRvZUorc0wwdElJV1N1NkdFM0dVOUJVK0s2TjkvTXZaT1F2RlgyQTM4T29kRm05bGZmZEQwNWY1MTN2YlN5UUxiK2JkRzRSRHdyRkhoZDFRYmJWeFdXL3JuaURvVDcvQnNNL3o3MS92L0J0a1g5UzlyYjhXdmJkVFduS0w3LzdvR09WOU8zRHdQK04wanlPZi9RMnQzaTg4aXNhN2ZiL0RSV2I3Z1hoWHdBQWRFOBkbfsGeoFh9PUabSMNzYv/n0w==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=zPXpLfVf5D45UMwkKZ01jGPU16Yvb2kE0XwD1xOYRsCHU9wePklxI74qSVgQ3LuZnJsembjlCOXBpCNWdcJaK9RRMFA1&amp;t=637812019220000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=2rH5KB7dLDrMti_UoTEDsBqKZU-YxA3_-rrwOPSQ8gZak5Yxuw2Q7PKuF7gTAlmtdCznif4TyOO2K0uHT0mqJZSAQKTADy8UUlqxaE8CnATZmDdKjY5W091cJOWutxjnxQWEhg2&amp;t=23c9c237" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=O6mESUy2QRjnPtadWkqcwcCEprGenAFBgJGclhpH10q-JAccpmRPA7RTuLDB5IvkQ1in61XHjfmB7b-ZmPMsPtiZYnXKNuFMBMk-l9m-wlxxF6xiayjw8zkJovv1wp-thfXzF4gteMpNLg-LTzwJ6VipjQk1&amp;t=23c9c237" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATV0ZGuRjJes7ZlYaMD2khRA3WT1cmFg+URCUAw/pUOr7E2lSwO3rCipGXrVg57dSAUyIfjnwR4HxGY+BeGxf+oEXkZJ1Nd8PqXdI2I6PmlyNz1370=" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$cookie$UpdatePanel1',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div class="page_wrapper" id="allpage">
+        <div class="header">
+            <div class="wrp-deco top"></div>
+            <div class="header_top">
+                
+
+            </div><!-- /.header_top -->
+            
+            <!-- ↓導覽列↓ -->
+            <div class="navbar" role="navigation">
+                
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        //yamm3樣式一 liclass: minwidth 讓主選單li 變為static  
+        $('.ab_nav li.minwidth').parents(".dropdown_submenu").addClass("pos_static");
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $('ul.dropdown-menu ul.dropdown-menu').parent().addClass('dropdown_submenu');
+        //滑動模式
+
+        $(function () {
+            ($(window).width() > 991) ? ho_visable() : removerhover();
+            $(window).resize(function (e) { ($(window).width() > 991) ? ho_visable() : removerhover(); });
+        });
+        
+    });
+
+    $("#ctl00_nav_01_kw").keypress(function (e) {
+        var isEnter = e.key == "Enter";
+        if (isEnter) __doPostBack('ctl00$nav_01$SearchButton1', '');
+        console.log(e.key, isEnter);
+        //return !isEnter;
+    });
+
+    //滑動模式 
+    function ho_visable() {
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $('.dropdown_submenu .dropdown-toggle').removeAttr("data-toggle");
+        $(".dropdown_submenu").hover(
+            function () { $(this).addClass("open"); },
+            function () { $(this).removeClass("open"); }
+        );
+    }
+    //手機版移除滑動
+    function removerhover() {
+        $(".dropdown_submenu").off("hover");
+        $('.dropdown_submenu .dropdown-toggle').attr("data-toggle", "dropdown");
+        $('.hover_r_sider').children('ul').removeClass("dropdown-menu sub-menu");
+    }
+    //點選模式 取消a連結轉為按鈕
+    function trigger() {
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $(".dropdown-menu > li.hover_r_sider > a.trigger").attr("data-toggle", "dropdown");
+        $('a.trigger').parent('li.hover_r_sider').find('ul').hide();
+    }
+    //恢復a連結 全部顯示
+    function triggeroff() {
+        $('.hover_r_sider').children('ul').removeClass("dropdown-menu sub-menu");
+        $('li.hover_r_sider a.trigger').parent('li.hover_r_sider').find('ul').show();
+        $(".dropdown-menu > li.hover_r_sider > a.trigger").attr("data-toggle", "");
+    }
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("allpage").style.marginLeft = "250px";
+        document.body.style.position = "fixed";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("allpage").style.marginLeft = "0";
+        document.body.style.position = "static";
+    }
+
+</script>
+
+<!--uc:nav-->
+<div class="phone_logo" style="display: none;">
+    <img src="/images/all/logo.png" alt="">
+</div>
+<div class="container">
+    <div class="navbar-header">
+        <ul class="m_nav  list-inline">
+            
+            <li>
+                <a id="ctl00_nav_01_LoginLink" class="m_icon" href="/member-login">會員登入</a></li>
+            <li><a class="c_icon" href="/cart">購物車<span>(<span id="ctl00_nav_01_shopCount">0</span>)</span></a></li>
+        </ul>
+        <a class="navbar-brand" href="/">HOME</a><!-- 網站名稱 or LOGO -->
+        <button type="button" class="navbar-toggle" onclick="openNav()">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- /.navbar-header -->
+
+    
+    <link type="text/css" href="/css/yamm3/yamm/yamm.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <!-- <link href="//fonts.googleapis.com/css?family=Noto+Sans+TC"" rel="stylesheet">-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="nav_bg">
+
+            <div class="form-inline sreachbox">
+
+                <input name="ctl00$nav_01$kw" type="text" id="ctl00_nav_01_kw" class="form-control" placeholder="文章搜尋" />
+                <a id="ctl00_nav_01_SearchButton1" class="btn btn-default" role="button" href="javascript:__doPostBack(&#39;ctl00$nav_01$SearchButton1&#39;,&#39;&#39;)">
+                         <span class="glyphicon glyphicon-search" ></span></a>
+            </div>
+
+            <script>
+</script>
+
+            <ul class="ab_nav">
+                <li class="dropdown_submenu">
+                    <a class="dropdown-toggle" val="關於科月" href="/about"><span class="title-main">關於科月</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu3">
+                        
+                        <li class="hover_r_sider">
+                            <a href="/about">關於科月</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/archives/scimonthcontent">科月目錄</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/archives/scitechcontent">科報目錄</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown_submenu">
+                    <a class="dropdown-toggle" val="購買科月" href="/store"><span class="title-main">購買科月</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu3">
+                        
+                        <li class="hover_r_sider">
+                            <a href="/subscribe">訂閱方案</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/store/1046">優惠方案</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/store/1037">諾貝爾系列</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/store">購買單期</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="/archives/wheretobuy">購買通路</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="/submit">投稿須知</a></li>
+                <li class="dropdown_submenu">
+                    <a class="dropdown-toggle" val="推廣專案" href="#"><span class="title-main">推廣專案</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu3">
+                        <li class="hover_r_sider">
+                            <!-- <a href="https://scistar.mystrikingly.com/" target="_blank">星火相傳計畫</a> -->
+                            <a href="/archives/scistarinfo">星火相傳計畫</a>
+                        </li>
+                        <li class="hover_r_sider">
+                            <a href="https://scimonth.neticrm.tw/civicrm/contribute/transact?reset=1&id=2" target="_blank">支持專案計畫</a>
+                        </li>
+                    </ul>
+                </li>
+
+                
+                
+                
+                
+                <li><a href="/search">進階搜尋</a></li>
+                
+            </ul>
+            <ul class="nav navbar-nav">
+                
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl00_LinkA" href="/article/cover">封面故事</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl01_LinkA" href="/article/news">News Focus</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl02_LinkA" href="/article/interview">專訪</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl03_LinkA" href="/article/column">專欄</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl04_LinkA" href="/article/scitech">科技報導</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl05_LinkA" href="/article/opinion">評論</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl06_LinkA" href="/article/other">精選文章與其他</a></li>
+                    
+                        <li>
+                            <a id="ctl00_nav_01_NewsRpt_ctl07_LinkA" href="/article/activity">活動訊息</a></li>
+                    
+                <!-- <li><a href="#"><span class="txt-en">CONTACT US</span><span class="txt-tw">聯絡我們</span></a></li>-->
+            </ul>
+            <!-- /.navbar-nav -->
+            <div class="clearfix"></div>
+
+
+            <div class="btn-group lang">
+                <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    繁體中文 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <!-- /.lang -->
+
+            <ul class="sub-nav list-inline">
+                <li><a href="//www.instagram.com/scimonth/" target="_blank">ig</a></li>
+                <li><a href=" https://www.youtube.com/channel/UC5VnVOFoKigeDRDPt3OpxBg" target="_blank">line</a></li>
+                <li><a href="//www.facebook.com/sciencemonthly" target="_blank">facebook</a></li>
+            </ul>
+            <!-- /.sub-nav -->
+
+
+
+
+        </div>
+        <!-- /.nav-collapse -->
+    </div>
+</div>
+<!-- /.container -->
+
+            </div><!-- /.navbar -->
+            <!-- ↑導覽列↑ -->
+
+            <!-- ↓Banner↓ -->
+            <div id="ctl00_banner" class="banner">
+                
+    
+<!--uc:banner_home-->
+<!-- bxslider -->
+<script type="text/javascript" src="/js/bxslider-4-master/jquery.bxslider.min.js"></script>
+<link href="/js/bxslider-4-master/jquery.bxslider.min.css" rel="stylesheet">
+<script>
+    $(document).ready(function () {
+        $('.banner .bxslider').bxSlider({
+            mode: 'horizontal',  //切換的模式：'horizontal'(左右切換), 'vertical'(上下切換), 'fade'(淡入淡出)
+            speed: 2000, //切換的速度
+            auto: true,  //是否自動播放
+            pause: 5000,  //每張圖停留的時間
+            controls: false,
+            pager: true
+        });
+    });
+</script>
+<style>
+    /* 設定桌機banner高度 */
+    .banner .bxslider li {
+        /*height: 500px;*/
+    }
+</style>
+<div class="container">
+    <div class="wrp_frame border-LT"></div>
+    <div class="wrp_frame border-CT"></div>
+    <div class="wrp_frame border-RT"></div>
+    <div class="wrp_frame border-LM"></div>
+    <div class="wrp_frame border-RM"></div>
+    <div class="wrp_frame border-LB"></div>
+    <div class="wrp_frame border-CB"></div>
+    <div class="wrp_frame border-RB"></div>
+    <ul class="bxslider">
+        
+                <li id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl00_HtmlliDiv">
+                    <a id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl00_HyperLinkA" href="https://issuu.com/627916/docs/_2023-6_642_-_" target="_blank"><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl00_pic" class="small" src="upload/banner/202305241638471.jpg" alt="1" style="border-width:0px;" /><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl00_pic2" class="big" src="upload/banner/202305241638470.jpg" style="border-width:0px;" /></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl01_HtmlliDiv">
+                    <a id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl01_HyperLinkA" href="https://issuu.com/627916/docs/_6_498_" target="_blank"><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl01_pic" class="small" src="upload/banner/202306071540291.jpg" alt="1" style="border-width:0px;" /><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl01_pic2" class="big" src="upload/banner/202306071540290.jpg" style="border-width:0px;" /></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl02_HtmlliDiv">
+                    <a id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl02_HyperLinkA"><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl02_pic" class="small" src="upload/banner/202009261736031.jpg" alt="1" style="border-width:0px;" /><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl02_pic2" class="big" src="upload/banner/202009261736390.jpg" style="border-width:0px;" /></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl03_HtmlliDiv">
+                    <a id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl03_HyperLinkA" href="https://smcase.ntu.edu.tw/SMCASE/" target="_blank"><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl03_pic" class="small" src="upload/banner/202009281145291.jpg" alt="1" style="border-width:0px;" /><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl03_pic2" class="big" src="upload/banner/202009281146240.jpg" style="border-width:0px;" /></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl04_HtmlliDiv">
+                    <a id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl04_HyperLinkA" href="https://www.scimonth.com.tw/tw/submit/index.aspx"><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl04_pic" class="small" src="upload/banner/202009261723341.jpg" alt="1" style="border-width:0px;" /><img id="ctl00_banner_holder_banner_home_BannerRepeater1_ctl04_pic2" class="big" src="upload/banner/202009261723340.jpg" style="border-width:0px;" /></a>
+                </li>
+            
+    </ul>
+</div>
+
+
+            </div><!-- /.banner -->
+            <!-- ↑Banner↑ -->
+    
+            <div class="header_ex">
+                
+
+            </div><!-- /.header_ex -->
+            <div class="wrp-deco bottom"></div>
+        </div><!-- /.header -->
+
+        <div class="main">
+
+            <div class="main_top">
+                
+
+            </div><!-- /.main_top -->
+            
+            <div class="main_content">
+                <div class="container">
+                    <div class="row">
+                        <div id="ctl00_side1" class="side1 hidden">
+                            <div class="wrp-deco top"></div>
+                            
+        	                
+
+                            
+                            <div class="wrp-deco bottom"></div>                    
+                        </div><!-- /.side1 -->
+                        
+                        <div id="ctl00_content" class="content col-sm-12">
+                            
+    
+  <!--article -->
+
+        <div class="foucsbox">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7 nopa">
+                <div class="foucsbox-slickBox" >
+                    
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl00_LinkA" href="/archives/6454">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl00_pic" class="img-responsive" src="/upload/article/202305301727230.png" alt="確診後仍久病不癒？解析「長新冠」症狀和致病因子" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">確診後仍久病不癒？解析「長新冠」症狀和致病因子</div>
+                              <div class="Author">作者  /  齊嘉鈺／國家衛生研究院感染症與疫苗研究所副研究員級...</div>
+                                <div class="txt" style="word-break: break-word;">距世界衛生組織（World Health Organization, WHO）宣布嚴重特殊傳染性肺炎（COVID-19）為大流行疾病已經過了三年，全...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl01_LinkA" href="/archives/6455">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl01_pic" class="img-responsive" src="/upload/article/202305301743530.png" alt="跟你想的不一樣！漫長疫情如何改變我們的生活？" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">跟你想的不一樣！漫長疫情如何改變我們的生活？</div>
+                              <div class="Author">作者  /  黃揚名／輔仁大學心理系副教授。</div>
+                                <div class="txt" style="word-break: break-word;">防堵疫情的規定實施後，確實對人們的心理產生影響，但這些影響並非持續性，對不同類群的人們影響程度也不一。除了心理...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl02_LinkA" href="/archives/6456">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl02_pic" class="img-responsive" src="/upload/article/202305301755260.png" alt="疫情下的群眾心理 科學、假消息與陰謀論的共伴效應" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">疫情下的群眾心理 科學、假消息與陰謀論的共伴效應</div>
+                              <div class="Author">作者  /  黃俊儒／中正大學通識教育中心特聘教授。長期關心科學...</div>
+                                <div class="txt" style="word-break: break-word;">嚴重特殊傳染性肺炎的情形是「後常態科學」問題，容易助長假消息擴散。民眾在疫情時會選擇以意識形態而非科學知識判斷...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl03_LinkA" href="/archives/6457">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl03_pic" class="img-responsive" src="/upload/article/202305301809080.png" alt="走過COVID-19 疫情後的我們 「記疫」計畫主持人林文源專訪" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">走過COVID-19 疫情後的我們 「記疫」計畫主持人林文源...</div>
+                              <div class="Author">作者  /  羅億庭／本刊編輯。</div>
+                                <div class="txt" style="word-break: break-word;">2020 年，「記疫」團隊因科技部計畫誕生，希望能留存嚴重特殊傳染性肺炎（COVID-19）下臺灣各界的經驗與觀點，提供給未...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl04_LinkA" href="/archives/6404">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl04_pic" class="img-responsive" src="/upload/article/202305021712420.png" alt="自四面八方、鋪天蓋地而來！塑膠微粒的傳播、衝擊與海洋危機" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">自四面八方、鋪天蓋地而來！塑膠微粒的傳播、衝擊與海...</div>
+                              <div class="Author">作者  /  許瑞峯／臺灣海洋大學海洋環境與生態研究所助理教授，...</div>
+                                <div class="txt" style="word-break: break-word;">塑膠是由液化石油氣中的高分子單體成分再加入如塑化劑、穩定劑、抗氧化劑、染料、阻燃劑等添加劑後，加工固化交聯成形...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl05_LinkA" href="/archives/6405">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl05_pic" class="img-responsive" src="/upload/article/202305021726460.png" alt="吃到塑膠微粒會怎麼樣？飲食中塑膠微粒對健康的影響" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">吃到塑膠微粒會怎麼樣？飲食中塑膠微粒對健康的影響</div>
+                              <div class="Author">作者  /  蕭伊倫／臺北醫學大學食品安全學系副教授。</div>
+                                <div class="txt" style="word-break: break-word;">自19 世紀中葉發明第一種合成聚合物⸺賽璐珞（celluloid）以來，全球塑膠年產量逐漸增加，至2020年時每年產量已達...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl06_LinkA" href="/archives/6406">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl06_pic" class="img-responsive" src="/upload/article/202305021803250.png" alt="動物便便大調查！糞便微塑膠研究與環境汙染倡議" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">動物便便大調查！糞便微塑膠研究與環境汙染倡議</div>
+                              <div class="Author">作者  /  Jenny Yeh／擔任綠色和平東亞分部研究員，擁有環境政...</div>
+                                <div class="txt" style="word-break: break-word;">調查研究一直是推動公共政策的重要依據，綠色和平科學研究部門（Science Unit）針對不同環境議題嚴謹地研究分析，發布...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl07_LinkA" href="/archives/6356">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl07_pic" class="img-responsive" src="/upload/article/202303281602030.png" alt="穿透雲雨、透視地表的祕密 合成孔徑雷達" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">穿透雲雨、透視地表的祕密 合成孔徑雷達</div>
+                              <div class="Author">作者  /  林玉儂／任職於中央研究院地球科學研究所，從事合成孔...</div>
+                                <div class="txt" style="word-break: break-word;">地球觀測衛星雷達可依光源區分為被動系統和主動系統。被動系統以太陽作為主要光源；主動系統則自主發射電磁波再接收回...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl08_LinkA" href="/archives/6357">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl08_pic" class="img-responsive" src="/upload/article/202303281618370.png" alt="監測環境變化的好幫手 多光譜遙測技術分析災情" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">監測環境變化的好幫手 多光譜遙測技術分析災情</div>
+                              <div class="Author">作者  /  曾國欣。徐憶瀠。</div>
+                                <div class="txt" style="word-break: break-word;">地表上的不同物體皆具有獨特光譜反射特性，在了解目標物的光譜反射特徵後，就可以設計合適的光譜波段進行偵測。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl09_LinkA" href="/archives/6358">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl09_pic" class="img-responsive" src="/upload/article/202303281633590.png" alt="監測地表的天氣現象 氣象衛星與雷達" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">監測地表的天氣現象 氣象衛星與雷達</div>
+                              <div class="Author">作者  /  鍾高陞／中央大學大氣科學系副教授，專長為氣象雷達與...</div>
+                                <div class="txt" style="word-break: break-word;">氣象衛星與雷達的原理都與電磁波有關。氣象雷達會「主動」發射電磁波，氣象衛星則是「被動」接收目標物放出或反射的電...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl10_LinkA" href="/archives/6360">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl10_pic" class="img-responsive" src="/upload/article/202303281704250.png" alt="衛星上太空卻無法可循？臺灣《太空發展法》挑戰商業太空時代" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">衛星上太空卻無法可循？臺灣《太空發展法》挑戰商業太...</div>
+                              <div class="Author">作者  /  黃居正／悠遊於航空與太空之餘，也矢志為建立多元文化...</div>
+                                <div class="txt" style="word-break: break-word;">臺灣無法加入《國際太空法原則》及國際組織，因此仿傚韓國、澳洲、紐西蘭的立法模式，三讀通過《太空發展法》及四個子...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl11_LinkA" href="/archives/6316">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl11_pic" class="img-responsive" src="/upload/article/202302231408260.png" alt="用 PowerPoint碎形疊代 創作出一幅山水畫－陽明交通大學榮譽退休教授 陳明璋專訪" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">用 PowerPoint碎形疊代 創作出一幅山水畫－陽明交通大...</div>
+                              <div class="Author">作者  /  林家妤 Sharkie Lin／喜歡新奇有趣的事物，像是數學藝...</div>
+                                <div class="txt" style="word-break: break-word;">讀者們有聽過「碎形」（fractal）這個詞嗎？碎形是自然界中常見的幾何圖形，可以在雪花、海岸、樹木、蕨類植物、羅馬花...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl12_LinkA" href="/archives/6323">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl12_pic" class="img-responsive" src="/upload/article/202302231617360.png" alt="真的需要睡掉三分之一的人生嗎？睡眠的科學意義與功能" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">真的需要睡掉三分之一的人生嗎？睡眠的科學意義與功能</div>
+                              <div class="Author">作者  /  張芳嘉／臺灣大學獸醫學院院長、臺灣大學神經生物與認...</div>
+                                <div class="txt" style="word-break: break-word;">睡眠是維持生存的必要生理狀態。然而，臺灣慢性失眠症的盛行率卻高達10.7％。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl13_LinkA" href="/archives/6324">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl13_pic" class="img-responsive" src="/upload/article/202302231636390.png" alt="情緒低落與肥胖竟是熬夜惹的禍？生理時鐘、睡眠、人體健康的三角習題" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">情緒低落與肥胖竟是熬夜惹的禍？生理時鐘、睡眠、人體...</div>
+                              <div class="Author">作者  /  黃雯華／中央研究院基因體研究中心助研究員，研究領域...</div>
+                                <div class="txt" style="word-break: break-word;">睡眠時間、長度、結構、入睡的難易程度等都受到生理時鐘調節，以廣泛且複雜的機制調節生理的晝夜節律。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl14_LinkA" href="/archives/6325">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl14_pic" class="img-responsive" src="/upload/article/202302231658350.png" alt="為什麼會失眠？從大腦科學與心理學找出失眠原因" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">為什麼會失眠？從大腦科學與心理學找出失眠原因</div>
+                              <div class="Author">作者  /  詹雅雯／政治大學心理系博士，任教於中原大學心理學系...</div>
+                                <div class="txt" style="word-break: break-word;">失眠患者經常有客觀檢查和自我睡眠知覺不一致的落差，主因為情緒調控、警醒相關腦區、神經傳導物質的功能缺失。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl15_LinkA" href="/archives/6327">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl15_pic" class="img-responsive" src="/upload/article/202302231735190.png" alt="不只是休息！睡不飽、睡不好如何 破壞人們的情緒與健康" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">不只是休息！睡不飽、睡不好如何 破壞人們的情緒與健...</div>
+                              <div class="Author">作者  /  李信謙／臺北醫學大學醫學院睡眠研究中心暨附設醫院睡...</div>
+                                <div class="txt" style="word-break: break-word;">睡眠不只是休息，是一種能維護個體正常機能、確保個體身心健康的重要運作階段。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl16_LinkA" href="/archives/6328">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl16_pic" class="img-responsive" src="/upload/article/202302231800020.png" alt="青少年睡眠不足的解方？在高中生早自習被取消之後" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">青少年睡眠不足的解方？在高中生早自習被取消之後</div>
+                              <div class="Author">作者  /  蔡宇哲／心理學博士，主持podcast《哇賽心理學》與《...</div>
+                                <div class="txt" style="word-break: break-word;">美國眾議院在2020 年決議將每年9 月的第三週訂為「學生睡眠健康週」；臺灣教育部也在去年宣布取消高中早自習，希望青少...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl17_LinkA" href="/archives/scistarinfo">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl17_pic" class="img-responsive" src="/upload/article/202302161456170.jpg" alt="「星火相傳」科學閱讀表達計畫" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">「星火相傳」科學閱讀表達計畫</div>
+                              <div class="Author">作者  /  科學月刊星火相傳計畫</div>
+                                <div class="txt" style="word-break: break-word;">《科學月刊》要走入校園，將科學知識帶給第一線的學生，打破地域限制，讓青春的生活，就是科學。</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl18_LinkA" href="/archives/6289">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl18_pic" class="img-responsive" src="/upload/article/202302021425150.png" alt="作物如何抵抗病蟲害？遠從新石器時代就開始的農糧育種" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">作物如何抵抗病蟲害？遠從新石器時代就開始的農糧育種</div>
+                              <div class="Author">作者  /  曾鈺茜／嘉義大學農藝系助理教授。</div>
+                                <div class="txt" style="word-break: break-word;">生物界存在許多會造成作物生長不良的嚴重病蟲害，使農作物產量損失和品質降低。世界上最重要的糧食作物為水稻、小麥、...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="box-list">
+                       <a id="ctl00_content_holder_articleRepeater1_ctl19_LinkA" href="/archives/6290">
+                            <div class="pic">
+                                 <img id="ctl00_content_holder_articleRepeater1_ctl19_pic" class="img-responsive" src="/upload/article/202302021444470.png" alt="為動物算命及改命 數量遺傳學與動物育種" style="border-width:0px;" />
+                            </div>
+                            <div class="infobox clearfix">
+                              <div class="title ">為動物算命及改命 數量遺傳學與動物育種</div>
+                              <div class="Author">作者  /  林恩仲／從小熱愛培育各種動物，後來在畜產領域學習、...</div>
+                                <div class="txt" style="word-break: break-word;">一萬多年前，人類在歐亞大陸上將灰狼的近親馴化成現代家犬，隨著農業社會的發展及各樣需求出現，更逐步地馴化綿羊、山...</div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                  
+                </div>
+                <script type="text/javascript">
+                    $('.foucsbox-slickBox').slick({
+                        dots: false,
+                        arrows: true,
+                        infinite: true,
+                        autoplay: true,
+                        speed: 1500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    });
+                </script>
+                
+            </div>
+             
+                
+            <div class="col-xs-12 col-sm-5  col-md-5  nopa finfo">
+                
+                        <div>
+                         <a id="ctl00_content_holder_articleRepeater2_ctl00_LinkA" href="/archives/6454">
+                       <div class="title ">確診後仍久病不癒？解析「長新冠」症狀和致病因子</div>
+                          <div class="txt" style="word-break: break-word;"> 距世界衛生組織（World Health Organization, WHO）宣布嚴重特殊傳染性肺炎（COVID-19）為大流行疾病已經過了三年，全...</div> 
+                         <div class="Author">作者  /  齊嘉鈺／國家衛生研究院感染症與疫苗研究所副研究員級...</div>  
+                        <div class="btn_more">Read  More >></div>
+                             <div class="clearfix"></div>
+                        </a>
+					</div>
+							    
+                    
+                        <div>
+                         <a id="ctl00_content_holder_articleRepeater2_ctl01_LinkA" href="/archives/6455">
+                       <div class="title ">跟你想的不一樣！漫長疫情如何改變我們的生活？</div>
+                          <div class="txt" style="word-break: break-word;"> 防堵疫情的規定實施後，確實對人們的心理產生影響，但這些影響並非持續性，對不同類群的人們影響程度也不一。除了心理...</div> 
+                         <div class="Author">作者  /  黃揚名／輔仁大學心理系副教授。</div>  
+                        <div class="btn_more">Read  More >></div>
+                             <div class="clearfix"></div>
+                        </a>
+					</div>
+							    
+                    
+                        <div>
+                         <a id="ctl00_content_holder_articleRepeater2_ctl02_LinkA" href="/archives/6456">
+                       <div class="title ">疫情下的群眾心理 科學、假消息與陰謀論的共伴效應</div>
+                          <div class="txt" style="word-break: break-word;"> 嚴重特殊傳染性肺炎的情形是「後常態科學」問題，容易助長假消息擴散。民眾在疫情時會選擇以意識形態而非科學知識判斷...</div> 
+                         <div class="Author">作者  /  黃俊儒／中正大學通識教育中心特聘教授。長期關心科學...</div>  
+                        <div class="btn_more">Read  More >></div>
+                             <div class="clearfix"></div>
+                        </a>
+					</div>
+							    
+                    
+            </div>    
+                   
+                </div>
+       </div>
+     <!--article -->
+
+        <div class="clearfix"></div>
+         <div class="hidden-xs hidden-sm col-md-2 nopa ad1">
+             
+<!--uc:side_ad 首頁左側(偏上)的這張圖 圖片建議尺寸：160*600 -->
+              <div class="ads">
+                    
+            
+            </div>
+           <div class="clearfix"></div>
+<!-- /.sider_ad -->
+             
+   <div class="ads">
+
+<!-- 首頁左側下 -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:160px;height:600px"
+data-ad-client="ca-pub-2342597746025065"
+data-ad-slot="9466225745"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+        </div>  
+    
+    <!--當期商品 -->
+    <div class="col-md-10 nopa">
+        <div class="newbox">
+               <h2>雜誌新刊</h2>   
+       <div class="row">
+           
+              
+              <div class="col-xs-12 col-md-6  nbook">
+                  <div class="col-xs-5 col-md-5  nopa pic"> 
+                        <a id="ctl00_content_holder_productRepeater1_ctl00_LinkA" href="/product/%e7%ac%ac642%e6%9c%9f"><img id="ctl00_content_holder_productRepeater1_ctl00_pic" class="img-responsive img-thumbnail" src="/upload/product/202305241636170.jpg" alt="科學月刊 6月號/2023 第642期：褪去口罩之後" style="border-width:0px;" /></a>
+                    </div>
+					<div class="col-xs-7 col-md-7">
+                       <a id="ctl00_content_holder_productRepeater1_ctl00_LinkB" href="/product/%e7%ac%ac642%e6%9c%9f">
+                             <div class="mn">2023年（637~648期）</div>
+                              <div class="np">科學月刊 6月號/2023 第642期：褪去口罩之後</div>
+                                <div class="txt">走過新冠疫情不只是脫下口罩這麼簡單，我們應該持續學習、強化科學知識、提升自我判斷力，才能正面迎向疫情後的新生活。
+</div>                        
+                              <div class="btn_more">Read  More >></div>
+                         </a>
+					</div>
+                  </div>
+                   
+
+             
+              
+              <div class="col-xs-12 col-md-6  nbook">
+                  <div class="col-xs-5 col-md-5  nopa pic"> 
+                        <a id="ctl00_content_holder_productRepeater1a_ctl00_LinkA" href="/product/1002"><img id="ctl00_content_holder_productRepeater1a_ctl00_pic" class="img-responsive img-thumbnail" src="/upload/product/201906101641210.jpg" alt="新訂一年方案：《科學月刊》一年12期 " style="border-width:0px;" /></a>
+                    </div>
+					<div class="col-xs-7 col-md-7">
+                       <a id="ctl00_content_holder_productRepeater1a_ctl00_LinkB" href="/product/1002">
+                             <div class="mn">新訂戶</div>
+                              <div class="np">新訂一年方案：《科學月刊》一年12期 </div>
+                                <div class="txt">科學是什麼？是地表萬物造就出的各種現象？是探究人體結構表徵系統的學問？是物質與能量的變化模式？還是藉由觀察、進而找出的特定模式或概...</div>                        
+                              <div class="btn_more">Read  More >></div>
+                         </a>
+					</div>
+                  </div>
+                   
+       </div>
+        </div>
+   <div class="clearfix"></div>
+    <div class="csbox">
+              <h2>封面故事</h2>  
+        <div class="row">
+            
+              <div class="col-xs-12 col-md-12 itembox">                
+                  <div class="col-md-4  nopa pic">  
+                         <a id="ctl00_content_holder_articleRepeater3_ctl00_LinkA" href="/archives/6454"><img id="ctl00_content_holder_articleRepeater3_ctl00_pic" class="img-responsive" src="/upload/article/202305301727230.png" alt="確診後仍久病不癒？解析「長新冠」症狀和致病因子" style="border-width:0px;" /></a>
+                      </div>
+					<div class="col-md-8">
+                       <a id="ctl00_content_holder_articleRepeater3_ctl00_LinkB" href="/archives/6454">
+                        <small class="tagtitle">642期－褪去口罩之後（6月號）</small>   
+                        <div class="title">確診後仍久病不癒？解析「長新冠」症狀和致病因子</div>
+                          <div class="Author">作者  /  齊嘉鈺／國家衛生研究院感染症與疫苗研究所副研究員級...</div>
+                           <div class="np">642期 </div>
+                        <div class="txt" style="word-break: break-word;">
+                                    距世界衛生組織（World Health Organization, WHO）宣布嚴重特殊傳染性肺炎（COVID-19）為大流行疾病已經過了三年，全世界都在努力掙脫新型冠狀病毒（SARS-CoV-2，簡稱新冠病毒）帶來的威脅，讓生活能繼續往前走。
+                                </div>
+                         <div class="clearfix"></div>   
+                       </a>
+                          <div class="tags">  <a href="/search-Tag/COVID-19" class="label badge">COVID-19</a><a href="/search-Tag/%e9%95%b7%e6%96%b0%e5%86%a0" class="label badge">長新冠</a><a href="/search-Tag/%e6%96%b0%e5%86%a0%e7%97%85%e6%af%92" class="label badge">新冠病毒</a><a href="/search-Tag/%e5%85%a7%e5%88%86%e6%b3%8c" class="label badge">內分泌</a><a href="/search-Tag/%e5%85%8d%e7%96%ab%e7%b3%bb%e7%b5%b1" class="label badge">免疫系統</a></div>
+                     </div>
+              </div>
+
+                
+              <div class="col-xs-12 col-md-12 itembox">                
+                  <div class="col-md-4  nopa pic">  
+                         <a id="ctl00_content_holder_articleRepeater3_ctl01_LinkA" href="/archives/6455"><img id="ctl00_content_holder_articleRepeater3_ctl01_pic" class="img-responsive" src="/upload/article/202305301743530.png" alt="跟你想的不一樣！漫長疫情如何改變我們的生活？" style="border-width:0px;" /></a>
+                      </div>
+					<div class="col-md-8">
+                       <a id="ctl00_content_holder_articleRepeater3_ctl01_LinkB" href="/archives/6455">
+                        <small class="tagtitle">642期－褪去口罩之後（6月號）</small>   
+                        <div class="title">跟你想的不一樣！漫長疫情如何改變我們的生活？</div>
+                          <div class="Author">作者  /  黃揚名／輔仁大學心理系副教授。</div>
+                           <div class="np">642期 </div>
+                        <div class="txt" style="word-break: break-word;">
+                                    防堵疫情的規定實施後，確實對人們的心理產生影響，但這些影響並非持續性，對不同類群的人們影響程度也不一。除了心理狀態，生活和發展上也發生負面影響，如老人退化加劇、孩童認知發展延後等，但其中也有正向的改變。疫情過後能發現，人們遠比想像中更強韌。
+                                </div>
+                         <div class="clearfix"></div>   
+                       </a>
+                          <div class="tags">  <a href="/search-Tag/COVID-19" class="label badge">COVID-19</a><a href="/search-Tag/%e9%9f%8c%e6%80%a7" class="label badge">韌性</a><a href="/search-Tag/%e5%bf%83%e7%90%86%e7%8b%80%e6%85%8b" class="label badge">心理狀態</a><a href="/search-Tag/%e5%ad%a9%e7%ab%a5%e7%99%bc%e5%b1%95" class="label badge">孩童發展</a><a href="/search-Tag/%e7%94%9f%e6%b4%bb" class="label badge">生活</a></div>
+                     </div>
+              </div>
+
+                
+              <div class="col-xs-12 col-md-12 itembox">                
+                  <div class="col-md-4  nopa pic">  
+                         <a id="ctl00_content_holder_articleRepeater3_ctl02_LinkA" href="/archives/6456"><img id="ctl00_content_holder_articleRepeater3_ctl02_pic" class="img-responsive" src="/upload/article/202305301755260.png" alt="疫情下的群眾心理 科學、假消息與陰謀論的共伴效應" style="border-width:0px;" /></a>
+                      </div>
+					<div class="col-md-8">
+                       <a id="ctl00_content_holder_articleRepeater3_ctl02_LinkB" href="/archives/6456">
+                        <small class="tagtitle">642期－褪去口罩之後（6月號）</small>   
+                        <div class="title">疫情下的群眾心理 科學、假消息與陰謀論的共伴效應</div>
+                          <div class="Author">作者  /  黃俊儒／中正大學通識教育中心特聘教授。長期關心科學...</div>
+                           <div class="np">642期 </div>
+                        <div class="txt" style="word-break: break-word;">
+                                    嚴重特殊傳染性肺炎的情形是「後常態科學」問題，容易助長假消息擴散。民眾在疫情時會選擇以意識形態而非科學知識判斷事態，容易掉入假新聞的陷阱，讓科學、假消息、陰謀論共伴發酵。防疫心理的形成機制複雜，我們應避免激起民眾的意識形態，確保科學知識以透明、開放的方式...
+                                </div>
+                         <div class="clearfix"></div>   
+                       </a>
+                          <div class="tags">  <a href="/search-Tag/%e7%a7%91%e5%ad%b8" class="label badge">科學</a><a href="/search-Tag/COVID-19" class="label badge">COVID-19</a><a href="/search-Tag/%e5%be%8c%e5%b8%b8%e6%85%8b%e7%a7%91%e5%ad%b8" class="label badge">後常態科學</a><a href="/search-Tag/%e5%81%87%e6%b6%88%e6%81%af" class="label badge">假消息</a><a href="/search-Tag/%e7%be%a4%e7%9c%be%e5%bf%83%e7%90%86" class="label badge">群眾心理</a><a href="/search-Tag/%e9%99%b0%e8%ac%80%e8%ab%96" class="label badge">陰謀論</a><a href="/search-Tag/%e5%85%b1%e4%bc%b4%e6%95%88%e6%87%89" class="label badge">共伴效應</a></div>
+                     </div>
+              </div>
+
+                
+             
+   
+       </div>
+    </div>
+    </div>
+        <div class="clearfix"></div>
+      <!--當期商品 -->
+
+      <!--首頁商品 -->
+
+    <div class="psmbox">
+           <h2>過往雜誌</h2>
+          <div class="psmbox_sec">
+         
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl00_LinkA" href="/product/%e7%ac%ac618%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl00_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151743510.jpg" alt="科學月刊 6月號/2021 第618期：雨神來啦！" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 6月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl01_LinkA" href="/product/617%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl01_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151744100.jpg" alt="科學月刊 5月號/2021 第617期：量子資訊" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 5月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl02_LinkA" href="/product/616%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl02_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151744350.jpg" alt="科學月刊 4月號/2021 第616期：從零開始的玻璃生活" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 4月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl03_LinkA" href="/product/615%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl03_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151745050.jpg" alt="科學月刊 3月號/2021 第615期：臺灣防疫大作戰" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 3月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl04_LinkA" href="/product/614%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl04_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151745200.jpg" alt="科學月刊 2月號/2021 第614期：做伙來搭飛機" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 2月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl05_LinkA" href="/product/613%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl05_pic" class="img-responsive img-thumbnail" src="/upload/product/202106151745320.jpg" alt="科學月刊 1月號/2021 第613期：水金九深度科學之旅" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 1月號/2021 ...<br />2021年（613~624期） </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl06_LinkA" href="/product/612%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl06_pic" class="img-responsive img-thumbnail" src="/upload/product/202011261634310.jpg" alt="科學月刊 12月號/2020 第612期：諾貝爾獎特別報導" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 12月號...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl07_LinkA" href="/product/611%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl07_pic" class="img-responsive img-thumbnail" src="/upload/product/202010291523100.jpg" alt="科學月刊 11月號/2020 第611期：美豬「萊」了" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 11月號...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl08_LinkA" href="/product/610%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl08_pic" class="img-responsive img-thumbnail" src="/upload/product/202009261102330.jpg" alt="科學月刊 10月號/2020 第610期：發射吧！立方衛星-已完售-無庫存 " style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 10月號...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl09_LinkA" href="/product/609%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl09_pic" class="img-responsive img-thumbnail" src="/upload/product/202008281609040.jpg" alt="科學月刊 9月號/2020 第609期：標本x生命" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 9月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl10_LinkA" href="/product/608%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl10_pic" class="img-responsive img-thumbnail" src="/upload/product/202007291532050.jpg" alt="科學月刊 8月號/2020 第608期：恐懼與鬼" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 8月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl11_LinkA" href="/product/607%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl11_pic" class="img-responsive img-thumbnail" src="/upload/product/202006291655290.jpg" alt="科學月刊 7月號/2020 第607期：5G行不行" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 7月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl12_LinkA" href="/product/606%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl12_pic" class="img-responsive img-thumbnail" src="/upload/product/202005291203500.jpg" alt="科學月刊 6月號/2020 第606期：紡織後現代" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 6月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl13_LinkA" href="/product/605%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl13_pic" class="img-responsive img-thumbnail" src="/upload/product/202004291128080.jpg" alt="科學月刊 5月號/2020 第605期：尋找火星人-已完售-無庫存 " style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 5月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl14_LinkA" href="/product/604%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl14_pic" class="img-responsive img-thumbnail" src="/upload/product/202003301436560.jpg" alt="科學月刊 4月號/2020 第604期：冠狀病毒的迫降" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 4月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl15_LinkA" href="/product/603%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl15_pic" class="img-responsive img-thumbnail" src="/upload/product/202002280948450.jpg" alt="科學月刊 3月號/2020 第603期：一起運動吧" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 3月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl16_LinkA" href="/product/602%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl16_pic" class="img-responsive img-thumbnail" src="/upload/product/202001211441140.jpg" alt="科學月刊 2月號/2020 第602期：100%中「鼠」" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 2月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl17_LinkA" href="/product/601%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl17_pic" class="img-responsive img-thumbnail" src="/upload/product/201912271717340.jpg" alt="科學月刊 1月號/2020 第601期：離岸風力發電" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 1月號/2020 ...<br />2020年 ( 601-612期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl18_LinkA" href="/product/600%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl18_pic" class="img-responsive img-thumbnail" src="/upload/product/201911281659070.jpg" alt="科學月刊 12月號/2019 第600期：諾貝爾獎特別報導" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 12月號...<br />2019年 ( 589~600期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+       <div>
+         <a id="ctl00_content_holder_productRepeater2_ctl19_LinkA" href="/product/599%e6%9c%9f">
+          <div class="newpic">
+           <div class="pic">  <img id="ctl00_content_holder_productRepeater2_ctl19_pic" class="img-responsive img-thumbnail" src="/upload/product/201910291023310.jpg" alt="科學月刊 11月號/2019 第599期：犯罪潛意識" style="border-width:0px;" /></div>
+               <div class="info">
+             <p class="title">科學月刊 11月號...<br />2019年 ( 589~600期 ) </p>                      
+            </div>   
+           </div>
+         </a>    
+    </div>
+  
+                  
+   
+  </div>
+
+         <script type="text/javascript">
+             $('.psmbox_sec').slick({
+                 dots: false,
+                 arrows: true,
+                 infinite: true,
+                 autoplay: false,               
+                 speed: 3000,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 responsive: [
+                     {
+                         breakpoint: 1025,
+                         settings: {
+                             slidesToShow: 3,
+                             slidesToScroll: 1,
+                             infinite: true,
+                             arrows: true,
+                         }
+                     },
+                     {
+                         breakpoint: 769,
+                         settings: {
+                             slidesToShow: 2,
+                             slidesToScroll: 1,
+                             arrows: true,
+                         }
+                     },
+                     {
+                         breakpoint: 482,
+                         settings: {
+                             slidesToShow: 1,
+                             slidesToScroll: 1,
+                             arrows: true,
+                         }
+                     }
+                 ]
+             });
+    </script> 
+    </div>
+      <!--首頁商品 -->
+
+    <div class="clearfix"></div>
+        <div class="buyinfo">
+        <div class="col-xs-12 col-sm-6 col-md-6 nopa"> <a href="/store"><img src="/images/all/buy.jpg" class="img-responsive" alt=""  /></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-6 nopa"><a href="/subscribe"><img src="/images/all/sub.jpg" class="img-responsive" alt=""  /></a></div>
+
+    </div>
+
+    <div class="clearfix"></div>
+    
+  <div class="hidden-xs hidden-sm col-md-12 nopa ad2 text-center">
+    <!--下方 -->
+    <ins class="adsbygoogle" style="display:inline-block;width:877px;height:90px"
+      data-ad-client="ca-pub-2342597746025065" data-ad-slot="3121923648"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+
+  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg nopa ad2 text-center">
+    <!-- 行動裝置下方 -->
+    <ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px"
+      data-ad-client="ca-pub-2342597746025065" data-ad-slot="3168179197"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+
+    <div class="clearfix"></div>
+    
+<!--uc:link-->
+<div class="pabox">
+           <h2>合作夥伴</h2>
+          <div class="pabox_sec">
+              
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl00_HyperLinkA" href="https://www.mdnkids.com/" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl00_pic" src="upload/link/202105311123570.jpg" alt="國語日報" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl01_HyperLinkA" href="https://www.ansforce.com/" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl01_pic" src="upload/link/202105311116020.jpg" alt="Ansforce知識力專家社群" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl02_HyperLinkA" href="https://case.ntu.edu.tw/" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl02_pic" src="upload/link/202105311145120.jpg" alt="CASE國立臺灣大學科學教育發展中心" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl03_HyperLinkA" href="https://prospect.phys.ntu.edu.tw/?fbclid=IwAR2EfCVkwYX-s3fS9Pv0_sHhlepnxW3cUfkQLi1O69HkWmc7wI9hTvhv5RA" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl03_pic" src="upload/link/202105311115560.jpg" alt="展望系列演講" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl04_HyperLinkA" href="https://pansci.asia/" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl04_pic" src="upload/link/202105311116170.jpg" alt="泛科學" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl05_HyperLinkA" href="https://www.thenewslens.com/author/scimonth" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl05_pic" src="upload/link/202105311152490.jpg" alt="關鍵評論網" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl06_HyperLinkA" href="https://numeracy.club" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl06_pic" src="upload/link/202105311154080.jpg" alt="數感實驗室" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+      <div>
+      <a id="ctl00_content_holder_link_linkRepeater1_ctl07_HyperLinkA" href="https://scitechvista.nat.gov.tw/index.htm" target="_blank">
+          <div class="newpic">
+           <div class="pic"><img id="ctl00_content_holder_link_linkRepeater1_ctl07_pic" src="upload/link/202105311125260.jpg" alt="科技大觀園" style="border-width:0px;" /></div>               
+           </div>
+           
+          </a>
+    </div>
+                  
+              
+  </div>
+
+         <script type="text/javascript">
+             $('.pabox_sec').slick({
+                 dots: false,
+                 arrows: true,
+                 infinite: true,
+                 autoplay: false,               
+                 speed: 3000,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 responsive: [
+                     {
+                         breakpoint: 1025,
+                         settings: {
+                             slidesToShow: 3,
+                             slidesToScroll: 1,
+                             infinite: true,
+                             arrows: true,
+                         }
+                     },
+                     {
+                         breakpoint: 769,
+                         settings: {
+                             slidesToShow:2,
+                             slidesToScroll: 1,
+                             arrows: true,
+                         }
+                     },
+                     {
+                         breakpoint: 482,
+                         settings: {
+                             slidesToShow: 1,
+                             slidesToScroll: 1,
+                             arrows: true,
+                         }
+                     }
+                 ]
+             });
+    </script> 
+    </div>
+
+
+                        </div><!-- /.content -->
+
+                        <div id="ctl00_side2" class="side2 hidden">
+                            <div class="wrp-deco top"></div>
+                            
+        	                
+
+                            
+                            <div class="wrp-deco bottom"></div>
+                        </div><!-- /.side2 -->
+                    </div><!-- /.row -->
+                    <div id="floating" class="isfixed">
+                        
+<!--uc:floating-->
+<ul class="list-unstyled">
+    <li class="ibm"><a href="/epaper"><img class="img-responsive" src="/images/all/epaper.png" /></a></li>
+</ul>
+
+                    </div><!-- /#floating -->
+                    <div class="clearfix"><!--計算.main的背景高度用--></div>
+                </div><!-- /.container -->
+            </div><!-- /.main_content -->
+
+            <div class="main_ex">
+                
+
+                   <div class="gotop"><a href="#"> <span class="txt-en">TOP</span><span class="txt-tw"></span></a></div>
+            </div><!-- /.main_ex -->
+            
+        </div><!-- /.main -->
+        
+        <div class="footer">
+            
+            <div class="footer_top">
+                <!-- footer_top的固定內容 -->
+                
+<!--uc:sitemap-->
+<div class="sitemap">
+
+    <div class="container">
+<div class="row">
+<div class="col-xs-12  col-sm-12 col-md-4 cinfo">
+    <img alt="科學月刊" class="img-responsive" src="/images/all/logo.svg">
+    <a href="//goo.gl/maps/ESstvRDwBvv" target="_new">台北市大安區羅斯福路三段 77 號 7 樓 </a><br>
+    服務電話：<a href="tel:+886-2-2363-4910">+886-2-2363-4910 </a><br>
+	電子郵件：<a href="mailto:scimonth@scimonth.one">scimonth@scimonth.one</a><br>
+    <!-- 傳真電話：<a href="tel:+886-2-2363-5999">+886-2-2363-5999</a><br> -->
+    服務時間：週一至週五 09:30~17:30，例假日除外。
+</div>
+
+<div class="col-xs-12 col-sm-12  col-md-3 cbox_top ">
+<ul class="nav cbox">
+	<li class="col-xs-12 col-md-6">
+	<h4>認識科月</h4>
+	<div><a href="/about">關於科月</a></div>
+	<div><a href="/content">各期目錄</a></div>
+	<div><a href="/submit">投稿須知</a></div>
+	<div><a href="/cooperation">合作洽談</a></div>
+	</li>
+	<li class="col-xs-12 col-md-6">
+	<h4>讀者服務</h4>
+	<div><a href="/store">購買雜誌</a></div>
+	<div><a href="/subscribe">訂閱雜誌</a></div>
+	<div><a href="/member-login">網路會員</a></div>
+    <div><a href="/epaper">訂閱電子報</a></div>
+	</li>	
+</ul>
+</div>
+
+    <div class="col-xs-12 col-sm-12  col-md-5 fbim">
+       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsciencemonthly&tabs=timeline&width=500&height=260&small_header=true&adapt_container_width=true&lazy=true&hide_cover=false&show_facepile=false&appId" width="500" height="260" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+    </div>
+
+
+</div>
+</div>
+
+</div>
+                
+
+            </div><!-- /.footer_top -->
+            
+            <div class="footer_content">
+                
+<!--uc:footer-->
+
+<div class="container">
+    <div class="copyright col-md-9 ">
+        <div class="btn_item">
+            <a href="/tw/terms/privacy.aspx">隱私政策</a>
+            <a href="/tw/terms/service.aspx">服務條款</a>
+        </div>
+        <ul class="list-unstyled">
+            <li>© 1970- by Science Monthly   若需轉載、使用科學月刊或科技報導的文字、圖像或影音等，請洽本公司。</li>          
+        </ul>           
+    </div>
+    <!-- /.siteinfo -->
+    <div class="powered  col-md-3">
+      
+<!--uc:eZPowered-->
+<div class="powered">
+    <a href="https://www.eztrust.com.tw" target="_blank">網頁設計 : 藝誠網頁設計公司</a>
+</div>
+
+
+
+
+      
+    </div><!-- /.copyright -->
+</div><!-- /.container -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            </div><!-- /.footer_content -->
+        </div><!-- /.footer -->
+        
+<!--uc:cookie-->
+<style>
+    .cookie {
+   display: block;
+}
+    </style>
+<div id="ctl00_cookie_UpdatePanel1">
+	
+
+<div id="ctl00_cookie_cookiePanel" class="cookie">
+		
+    <div class="container">
+        <div class="c_item">
+            <p>
+                
+                本站使用第三方服務進行分析，以確保使用者獲得更好的體驗。了解本站<a href="/tw/terms/privacy.aspx" class="btn1">隱私權政策</a>
+            </p>
+            <a id="ctl00_cookie_btn2Button1" class="btn2" href="javascript:__doPostBack(&#39;ctl00$cookie$btn2Button1&#39;,&#39;&#39;)">OK</a>
+        </div>
+    </div>
+
+	</div>
+        
+    
+</div>
+   
+    </div><!-- /.page_wrapper -->
+    </form>
+</body>
+</html>
